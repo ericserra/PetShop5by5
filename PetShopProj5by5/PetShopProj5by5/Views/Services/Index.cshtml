@@ -12,9 +12,6 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ServiceType)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.TotalValue)
         </th>
         <th>
@@ -26,18 +23,15 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.ServiceType)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.TotalValue)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.ServiceDescription)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            @Html.ActionLink("Edit", "Edit", new { id=item.ServiceType }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ServiceType }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ServiceType })
         </td>
     </tr>
 }
