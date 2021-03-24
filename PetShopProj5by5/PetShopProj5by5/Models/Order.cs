@@ -9,7 +9,7 @@ namespace PetShopProj5by5.Models
 {
     public class Order
     {
-        [Key, Column(Order = 4)]
+        [Key, Column(Order = 0)]
         public int OrderId { get; set; }
         public decimal OrderTotal { get; set; }
         public string PaymentMethod { get; set; }
@@ -17,7 +17,7 @@ namespace PetShopProj5by5.Models
         [ForeignKey("Customer"), Column(Order = 0)]
         public virtual Customer Customer { get; set; }
 
-        [ForeignKey("Product"), Column(Order = 1)]
-        public  virtual Product Product { get; set; }
+        [ForeignKey("Product"), Column(Order = 0)]
+        public virtual Product Product { get; set; }
     }
 }

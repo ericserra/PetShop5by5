@@ -18,6 +18,9 @@ namespace PetShopProj5by5.Models
         public string City { get; set; }
         public string Neighborhood { get; set; }
         public string State { get; set; }
-        public string PostalCode { get; set; }       
+        public string PostalCode { get; set; }
+        public virtual ICollection<Schedule> Schedule { get; set; }
+        public virtual ICollection<Pet> Pet { get; set; }
+        public virtual ICollection<Order> Order { get; set; }
     }
 }

@@ -13,14 +13,14 @@ namespace PetShopProj5by5.Models
         public DateTime AppointmentTime { get; set; }
         [Key]
         public int AppointmentProtocol { get; set; }
-        public string  PaymentMethod { get; set; }
+        public string PaymentMethod { get; set; }
         [ForeignKey("Customer"), Column(Order = 0)]
-        public virtual  Customer Customer { get; set; }
-        [ForeignKey("Pet"), Column(Order = 4)]
-        public virtual  Pet Pet { get; set; }
-        [ForeignKey("Employee"), Column(Order = 2)]
+        public virtual Customer Customer { get; set; }
+        [ForeignKey("Pet"), Column(Order = 0)]
+        public virtual Pet Pet { get; set; }
+        [ForeignKey("Employee"), Column(Order = 0)]
         public virtual Employee Employee { get; set; }
-        [ForeignKey("Services"), Column(Order = 1)]
+        [ForeignKey("Services"), Column(Order = 0)]
         public virtual Services Services { get; set; }
 
 
