@@ -48,6 +48,10 @@ namespace PetShopProj5by5.Controllers
                 Customer customerUpdate = psc.Customers.First(c => c.CustomerId == customer.CustomerId);
                 customerUpdate.Name = customer.Name;
                 customerUpdate.PhoneNumber = customer.PhoneNumber;
+                customerUpdate.Street= customer.Street;
+                customerUpdate.Neighborhood = customer.Neighborhood;
+                customerUpdate.State = customer.State;
+                customerUpdate.PostalCode = customer.PostalCode;
                 psc.SaveChanges();
                 return RedirectToAction("Index");
             }

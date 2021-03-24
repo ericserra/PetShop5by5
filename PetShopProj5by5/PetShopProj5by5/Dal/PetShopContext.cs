@@ -13,7 +13,6 @@ namespace PetShopProj5by5.Dal
         {
         }
         public DbSet<Pet> Pets { set; get; }
-        public DbSet<Address> Addresses { set; get; }
         public DbSet<Customer> Customers { set; get; }
         public DbSet<Employee> Employees { set; get; }
         public DbSet<Order> Orders { set; get; }
