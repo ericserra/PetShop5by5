@@ -12,6 +12,6 @@ namespace PetShopProj5by5.Models
         [Key, Column(Order = 0)]
         public int IdEmployee { get; set; }
         public string Name { get; set; }
-        public virtual ICollection<Schedule> Schedule { get; set; }
+        //public virtual ICollection<Schedule> Schedule { get; set; }
     }
 }

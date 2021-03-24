@@ -14,6 +14,6 @@ namespace PetShopProj5by5.Models
         public  string Type { get; set; }
         public string ProductDescription { get; set; }
         public decimal IndividualValue { get; set; }
-        public virtual ICollection<Order> Order { get; set; }
+       // public virtual ICollection<Order> Order { get; set; }
     }
 }

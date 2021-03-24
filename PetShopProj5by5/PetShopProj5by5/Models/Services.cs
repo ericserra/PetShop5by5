@@ -13,6 +13,6 @@ namespace PetShopProj5by5.Models
         public int ServiceType { get; set; }
         public decimal TotalValue { get; set; }
         public string ServiceDescription { get; set; }
-        public virtual ICollection<Schedule> Schedule { get; set; }
+        //public virtual ICollection<Schedule> Schedule { get; set; }
     }
 }

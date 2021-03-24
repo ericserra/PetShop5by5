@@ -20,5 +20,13 @@ namespace PetShopProj5by5.Dal
         public DbSet<Product> Products { set; get; }
         public DbSet<Services> Services { set; get; }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+           
+
+        }
+
     }
 }
