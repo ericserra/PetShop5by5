@@ -76,8 +76,8 @@ C:\temp\PetShop5by5\PetShopProj5by5\PetShopProj5by5\bin\System.Web.WebPages.Razo
 C:\temp\PetShop5by5\PetShopProj5by5\PetShopProj5by5\bin\Newtonsoft.Json.xml
 C:\temp\PetShop5by5\PetShopProj5by5\PetShopProj5by5\bin\Antlr3.Runtime.pdb
 C:\temp\PetShop5by5\PetShopProj5by5\PetShopProj5by5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\temp\PetShop5by5\PetShopProj5by5\PetShopProj5by5\obj\Debug\PetShopProj5by5.csprojAssemblyReference.cache
 C:\temp\PetShop5by5\PetShopProj5by5\PetShopProj5by5\obj\Debug\PetShopProj5by5.csproj.CoreCompileInputs.cache
 C:\temp\PetShop5by5\PetShopProj5by5\PetShopProj5by5\obj\Debug\PetShopProj5by5.csproj.CopyComplete
 C:\temp\PetShop5by5\PetShopProj5by5\PetShopProj5by5\obj\Debug\PetShopProj5by5.dll
 C:\temp\PetShop5by5\PetShopProj5by5\PetShopProj5by5\obj\Debug\PetShopProj5by5.pdb
+C:\temp\PetShop5by5\PetShopProj5by5\PetShopProj5by5\obj\Debug\PetShopProj5by5.csprojAssemblyReference.cache

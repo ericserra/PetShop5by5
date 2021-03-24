@@ -8,13 +8,13 @@ using PetShopProj5by5.Models;
 
 namespace PetShopProj5by5.Controllers
 {
-    public class EmployeeController : Controller
+    public class AddressController : Controller
     {
         private PetShopContext psc = new PetShopContext();
         // GET: Custumer
         public ActionResult Index()
         {
-            return View(psc.Employees.ToList());
+            return View(psc.Addresses.ToList());
         }
 
         public ActionResult Create()
@@ -24,50 +24,50 @@ namespace PetShopProj5by5.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Employee employee)
+        public ActionResult Create(Address address)
         {
             if (ModelState.IsValid)
             {
-                psc.Employees.Add(employee);
+                psc.Addresses.Add(address);
                 psc.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(employee);
+            return View(address);
         }
-        public ActionResult Edit(int id)
+        public ActionResult Edit(string id)
         {
-            return View(psc.Employees.First(e => e.IdEmployee == id));
+            return View(psc.Addresses.First(a => a.Cep == id));
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Employee employee) //Consertar essa gabirosca
+        public ActionResult Edit(Address address) //Consertar essa gabirosca
         {
             if (ModelState.IsValid)
             {
-                Employee employeeUpdate = psc.Employees.First(e => e.IdEmployee == employee.IdEmployee);
-                employeeUpdate.Name = employee.Name;
+                Address addressUpdate = psc.Addresses.First(a => a.Cep == address.Cep);
+                addressUpdate.Cep = address.Cep;
                 psc.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(employee);
+            return View(address);
         }
 
-        public ActionResult Details(int id)
+        public ActionResult Details(string id)
         {
-            return View(psc.Employees.First(e => e.IdEmployee == id));
+            return View(psc.Addresses.First(a => a.Cep == id));
         }
 
-        public ActionResult Delete(int id)
+        public ActionResult Delete(string id)
         {
-            return View(psc.Employees.First(e => e.IdEmployee == id));
+            return View(psc.Addresses.First(a => a.Cep == id));
         }
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirm(int id)
+        public ActionResult DeleteConfirm(string id)
         {
-            psc.Employees.Remove(psc.Employees.First(e => e.IdEmployee == id));
+            psc.Addresses.Remove(psc.Addresses.First(a => a.Cep == id));
             psc.SaveChanges();
             return RedirectToAction("Index");
         }
