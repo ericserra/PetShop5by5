@@ -1,11 +1,5 @@
 ﻿@model IEnumerable<PetShopProj5by5.Models.Schedule>
 
-@{
-    ViewBag.Title = "Index";
-}
-
-<h2>Index</h2>
-
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -20,6 +14,18 @@
         <th>
             @Html.DisplayNameFor(model => model.PaymentMethod)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PetID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmployeeID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ServicesID)
+        </th>
         <th></th>
     </tr>
 
@@ -33,6 +39,18 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.PaymentMethod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PetID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmployeeID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ServicesID)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.AppointmentProtocol }) |

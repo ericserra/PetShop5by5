@@ -1,11 +1,5 @@
 ﻿@model PetShopProj5by5.Models.Schedule
 
-@{
-    ViewBag.Title = "Details";
-}
-
-<h2>Details</h2>
-
 <div>
     <h4>Schedule</h4>
     <hr />
@@ -32,6 +26,38 @@
 
         <dd>
             @Html.DisplayFor(model => model.PaymentMethod)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PetID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PetID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServicesID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServicesID)
         </dd>
 
     </dl>
