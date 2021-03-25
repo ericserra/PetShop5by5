@@ -136,7 +136,8 @@
     <Compile Include="Controllers\ScheduleController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Dal\PetShopContext.cs" />
-    <Compile Include="Dal\PetShopInitializer.cs" />
+    <Compile Include="Dal\ServicesInitializer.cs" />
+    <Compile Include="Dal\ProductInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -171,6 +172,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\Schedule.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -205,11 +207,6 @@
     <Content Include="Views\Pet\Edit.cshtml" />
     <Content Include="Views\Pet\Details.cshtml" />
     <Content Include="Views\Pet\Delete.cshtml" />
-    <Content Include="Views\Product\Index.cshtml" />
-    <Content Include="Views\Product\Create.cshtml" />
-    <Content Include="Views\Product\Edit.cshtml" />
-    <Content Include="Views\Product\Details.cshtml" />
-    <Content Include="Views\Product\Delete.cshtml" />
     <Content Include="Views\Schedule\Index.cshtml" />
     <Content Include="Views\Schedule\Create.cshtml" />
     <Content Include="Views\Schedule\Edit.cshtml" />
@@ -217,6 +214,8 @@
     <Content Include="Views\Schedule\Delete.cshtml" />
     <Content Include="Views\Services\Index.cshtml" />
     <Content Include="Views\Services\Details.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Product\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

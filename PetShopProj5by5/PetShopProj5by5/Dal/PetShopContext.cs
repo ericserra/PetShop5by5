@@ -22,9 +22,7 @@ namespace PetShopProj5by5.Dal
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-
-           
+            base.OnModelCreating(modelBuilder);          
 
         }
 
