@@ -4,14 +4,15 @@
     padding: 30px;
     background-color: #B0E7EA;
 }
+
 .subtitulo {
     text-align: center;
-    font-size: 120% ;
+    font-size: 120%;
     font-family: Trebuchet MS;
-
     padding: 30px, 100px;
     background-color: #CDEAEC;
 }
+
 h1 {
     text-align: center;
     margin-bottom: 20px;
