@@ -80,7 +80,6 @@ C:\temp\PetShop5by5\PetShopProj5by5\PetShopProj5by5\obj\Debug\PetShopProj5by5.cs
 C:\temp\PetShop5by5\PetShopProj5by5\PetShopProj5by5\obj\Debug\PetShopProj5by5.csproj.CopyComplete
 C:\temp\PetShop5by5\PetShopProj5by5\PetShopProj5by5\obj\Debug\PetShopProj5by5.dll
 C:\temp\PetShop5by5\PetShopProj5by5\PetShopProj5by5\obj\Debug\PetShopProj5by5.pdb
-C:\temp\PetShop5by5\PetShopProj5by5\PetShopProj5by5\obj\Debug\PetShopProj5by5.csprojAssemblyReference.cache
 C:\Users\talit\Source\Repos\PetShop5by5\PetShopProj5by5\PetShopProj5by5\bin\PetShopProj5by5.dll.config
 C:\Users\talit\Source\Repos\PetShop5by5\PetShopProj5by5\PetShopProj5by5\bin\PetShopProj5by5.dll
 C:\Users\talit\Source\Repos\PetShop5by5\PetShopProj5by5\PetShopProj5by5\bin\PetShopProj5by5.pdb

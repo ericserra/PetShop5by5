@@ -1,8 +1,18 @@
-﻿.titulo {
-    text-align: center;
-    font-size: 300%;
+body {
+    background-color: #CDEAEC;
+}
+.principal {
+    background: #CDEAEC;
     padding: 30px;
-    background-color: #B0E7EA;
+}
+
+.titulo-principal {
+    padding-left: 20px;
+    background: blueviolet 150px;
+    
+}
+em strong {
+    color: blue;
 }
 
 .subtitulo {
@@ -13,10 +23,16 @@
     background-color: #CDEAEC;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
+h2 {
+    text-align: left;
     margin-left: 20px;
     color: rgb(92, 116, 116);
-    text-shadow: 5px 5px 5px rgb(213, 238, 225 );
+}
+.imagem {
+    float: left;
+    width: 380px;
+}
+
+img {
+    width: 80%;
 }
