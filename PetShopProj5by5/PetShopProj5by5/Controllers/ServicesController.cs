@@ -20,7 +20,13 @@ namespace PetShopProj5by5.Controllers
         [HttpPost]
         public ActionResult Details(int id)
         {
-            return View(psc.Schedules.First(s => s.AppointmentProtocol == id));
+            return View(psc.Services.First(s => s.ServiceType == id));
         }
+
+        public ActionResult GetTotal(int id)
+        {
+            return View(psc.Services.Where(s => s.ServiceType == id).Select(p => p.ServiceType));
+        }
+        
     }
 }

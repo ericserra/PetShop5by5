@@ -28,6 +28,14 @@ namespace PetShopProj5by5.Controllers
         {
             if (ModelState.IsValid)
             {
+                List<Services> services = psc.Services.ToList();
+                foreach (var item in services)
+                {
+                    if (item.ServiceType == schedule.ServicesID)
+                    {
+                        schedule.TotalValue = item.TotalValue;
+                    }
+                }
                 psc.Schedules.Add(schedule);
                 psc.SaveChanges();
                 return RedirectToAction("Index");

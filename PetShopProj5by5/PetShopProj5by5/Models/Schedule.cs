@@ -25,6 +25,7 @@ namespace PetShopProj5by5.Models
         public int EmployeeID { get; set; }
         [ForeignKey("Services")]
         public int ServicesID { get; set; }
+        public decimal TotalValue { get; set; }
         public virtual Customer Customer { get; set; }      
         public virtual Pet Pet { get; set; }       
         public virtual Employee Employee { get; set; }       

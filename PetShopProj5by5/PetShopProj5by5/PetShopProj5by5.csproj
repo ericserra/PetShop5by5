@@ -207,15 +207,15 @@
     <Content Include="Views\Pet\Edit.cshtml" />
     <Content Include="Views\Pet\Details.cshtml" />
     <Content Include="Views\Pet\Delete.cshtml" />
+    <Content Include="Views\Services\Index.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Product\Details.cshtml" />
+    <Content Include="Views\Services\Details.cshtml" />
     <Content Include="Views\Schedule\Index.cshtml" />
     <Content Include="Views\Schedule\Create.cshtml" />
     <Content Include="Views\Schedule\Edit.cshtml" />
     <Content Include="Views\Schedule\Details.cshtml" />
     <Content Include="Views\Schedule\Delete.cshtml" />
-    <Content Include="Views\Services\Index.cshtml" />
-    <Content Include="Views\Services\Details.cshtml" />
-    <Content Include="Views\Product\Index.cshtml" />
-    <Content Include="Views\Product\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
