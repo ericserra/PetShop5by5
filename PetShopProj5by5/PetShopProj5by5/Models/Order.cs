@@ -11,8 +11,10 @@ namespace PetShopProj5by5.Models
     {
         [Key, Column(Order = 0)]
         public int OrderId { get; set; }
-        public decimal OrderTotal { get; set; }
         public string PaymentMethod { get; set; }
+        public decimal OrderTotal { get; set; }
+        [ForeignKey("Product")]
+        public int ProductID { get; set; }
 
         //[ForeignKey("Customer"), Column(Order = 0)]
         public virtual Customer Customer { get; set; }

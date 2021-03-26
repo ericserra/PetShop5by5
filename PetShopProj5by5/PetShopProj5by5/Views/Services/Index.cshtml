@@ -1,14 +1,6 @@
 ﻿@model IEnumerable<PetShopProj5by5.Models.Services>
 
-@{
-    ViewBag.Title = "Index";
-}
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
         <th>
@@ -30,12 +22,10 @@
                 @Html.DisplayFor(modelItem => item.ServiceDescription)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.ServiceType }) |
-                @Html.ActionLink("Details", "Details", new { id = item.ServiceType }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.ServiceType })
+                @Html.ActionLink("Details", "Details", new { id = item.ServiceType }) 
             </td>
         </tr>
     }
     <link rel="stylesheet" href="~/CSS/Pagina.css" />
-
 </table>
+

@@ -1,21 +1,18 @@
 ﻿@model IEnumerable<PetShopProj5by5.Models.Order>
 
-@{
-    ViewBag.Title = "Index";
-}
-
-<h2>Index</h2>
-
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.PaymentMethod)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.OrderTotal)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.PaymentMethod)
+            @Html.DisplayNameFor(model => model.ProductID)
         </th>
         <th></th>
     </tr>
@@ -23,10 +20,13 @@
 @foreach (var item in Model) {
     <tr>
         <td>
+            @Html.DisplayFor(modelItem => item.PaymentMethod)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.OrderTotal)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.PaymentMethod)
+            @Html.DisplayFor(modelItem => item.ProductID)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.OrderId }) |
@@ -37,4 +37,3 @@
 }
 
 </table>
-<link rel="stylesheet" href="~/CSS/Pagina.css" />

@@ -28,6 +28,14 @@ namespace PetShopProj5by5.Controllers
         {
             if (ModelState.IsValid)
             {
+                List<Product> products = psc.Products.ToList();
+                foreach (var item in products)
+                {
+                    if (item.ProductId == order.ProductID)
+                    {
+                        order.OrderTotal = item.IndividualValue;
+                    }
+                }
                 psc.Orders.Add(order);
                 psc.SaveChanges();
                 return RedirectToAction("Index");

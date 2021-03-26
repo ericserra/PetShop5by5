@@ -17,7 +17,7 @@ namespace PetShopProj5by5.Controllers
             return View(psc.Services.ToList());
         }
 
-        [HttpPost]
+        
         public ActionResult Details(int id)
         {
             return View(psc.Services.First(s => s.ServiceType == id));
